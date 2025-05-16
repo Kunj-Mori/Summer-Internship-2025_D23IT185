@@ -115,4 +115,4 @@ This internship helped me explore advanced AI/ML concepts, including:
 ---
 
 **👨‍💻 Developed by:** Kunj Mori  
-**📅 Internship Duration:** May 2025 
+**📅 Internship Duration:** May 2025 - July 2025
