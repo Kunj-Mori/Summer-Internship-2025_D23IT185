@@ -1,6 +1,6 @@
 # 🧠 Internship Project – AI-Powered Applications (May 2025)
 
-This repository showcases the work I completed during my internship in May 2025. It includes three major AI/ML-based tasks: **Text-to-Image Generation**, **Sentiment Analysis using NLP**, and **Spam Detection using SVM**.
+This repository showcases the work I completed during my internship in May 2025. It includes four major AI/ML-based tasks: **Text-to-Image Generation**, **Sentiment Analysis using NLP**, **Spam Detection using SVM**, and **Image/Video Enhancement with Cinematic Filter**.
 
 ---
 
@@ -13,6 +13,9 @@ This repository showcases the work I completed during my internship in May 2025.
 | 14/05/2025  | ✅ Completed **Task 1**: Text-to-Image Generator using Stable Diffusion  |
 | 15/05/2025  | ✅ Completed **Task 2**: Sentiment Analysis using NLP                    |
 | 16/05/2025  | ✅ Completed **Task 3**: Email Spam Classification using SVM             |
+| 17/05/2025  | 📌 Started **Task 4**: Researched Image/Video Enhancement techniques     |
+| 18/05/2025  | ✅ Implemented cinematic filter for **Image Enhancement**                |
+| 19/05/2025  | ✅ Extended functionality to **Video & Webcam** with `Streamlit` UI      |
 
 ---
 
@@ -32,13 +35,13 @@ Created a web app using `Streamlit` to generate images from natural language pro
 - Prompt & negative prompt support
 
 **Main Functions Used**:
-| Function Name     | Purpose                                                        |
-|-------------------|----------------------------------------------------------------|
-| `load_model()`    | Loads and configures the Stable Diffusion pipeline             |
-| `clear_memory()`  | Frees up GPU memory after image generation                     |
-| `st.text_area()`  | Accepts user prompt and negative prompt                        |
-| `pipe()`          | Generates the image from the prompt using diffusion model      |
-| `st.download_button()` | Allows downloading the generated image                    |
+| Function Name           | Purpose                                                        |
+|-------------------------|----------------------------------------------------------------|
+| `load_model()`          | Loads and configures the Stable Diffusion pipeline             |
+| `clear_memory()`        | Frees up GPU memory after image generation                     |
+| `st.text_area()`        | Accepts user prompt and negative prompt                        |
+| `pipe()`                | Generates the image from the prompt using diffusion model      |
+| `st.download_button()`  | Allows downloading the generated image                         |
 
 ---
 
@@ -80,12 +83,39 @@ Developed a simple SVM-based email classifier to detect **Spam** vs **Not Spam**
 - Predicted category of user input email
 
 **Main Functions Used**:
-| Function Name      | Purpose                                                |
-|--------------------|--------------------------------------------------------|
-| `preprocess()`     | Cleans text using regex                                |
-| `CountVectorizer()`| Converts emails to numeric format                      |
-| `SVC(kernel='linear')` | Trains a linear support vector machine            |
-| `model.predict()`  | Predicts spam or not spam based on user input          |
+| Function Name           | Purpose                                                |
+|-------------------------|--------------------------------------------------------|
+| `preprocess()`          | Cleans text using regex                                |
+| `CountVectorizer()`     | Converts emails to numeric format                      |
+| `SVC(kernel='linear')`  | Trains a linear support vector machine                 |
+| `model.predict()`       | Predicts spam or not spam based on user input          |
+
+---
+
+## 🎞️ Task 4: Image & Video Enhancement – Cinematic Filter ✨
+
+**Description**:  
+Designed and implemented a **Cinematic Enhancement Filter** for both images and videos. The filter enhances media by adjusting contrast, brightness, color, adding tint, vignette effect, and film grain. Integrated with a simple CLI and `Streamlit` UI.
+
+**Libraries Used**:  
+`OpenCV`, `Pillow`, `NumPy`, `Matplotlib`, `Google Colab`, `Streamlit`
+
+**Key Features**:
+- Applies cinematic-style enhancements to **images**, **videos**, and **webcam feed**
+- Adjustable filter parameters for fine-tuning
+- Real-time webcam processing
+- Saves enhanced outputs and allows download
+
+**Main Functions Used**:
+| Function Name            | Purpose                                                   |
+|--------------------------|-----------------------------------------------------------|
+| `CinematicFilter.apply()`| Main enhancement pipeline (contrast, tint, vignette, etc.)|
+| `adjust_tint()`          | Applies a red-blue cinematic tint                         |
+| `add_vignette()`         | Adds dark corners for depth effect                        |
+| `add_film_grain()`       | Introduces subtle grain to simulate film look             |
+| `process_image_mode()`   | Applies filter to image and shows + downloads result      |
+| `process_video_mode()`   | Processes all frames of a video and saves output          |
+| `process_webcam_mode()`  | Streams real-time webcam with filter applied              |
 
 ---
 
@@ -98,7 +128,8 @@ Developed a simple SVM-based email classifier to detect **Spam** vs **Not Spam**
 | Web App              | `Streamlit`                                      |
 | NLP & ML Models      | `Scikit-learn`, `Naive Bayes`, `SVM`             |
 | Image Generation     | `Stable Diffusion`, `Diffusers`, `Torch`         |
-| Miscellaneous        | `PIL`, `Regex`, `GC`, `Platform`                 |
+| Enhancement Tools    | `OpenCV`, `Pillow`, `Matplotlib`                 |
+| Miscellaneous        | `Regex`, `GC`, `Platform`, `Google Colab`        |
 
 ---
 
@@ -108,9 +139,10 @@ This internship helped me explore advanced AI/ML concepts, including:
 - Real-world **text-to-image synthesis**
 - Building **NLP pipelines** from scratch
 - Classifying textual data with **SVM**
-- Using cutting-edge tools like **Stable Diffusion**
+- Applying **Cinematic Filters** to image and video data
+- Using cutting-edge tools like **Stable Diffusion**, `OpenCV`, and `Streamlit`
 
-> ✅ Regular commits and progress updates were made between 12–16 May 2025.
+> ✅ Regular commits and progress updates were made between 12–19 May 2025.
 
 ---
 
