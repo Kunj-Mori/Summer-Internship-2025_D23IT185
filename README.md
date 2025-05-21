@@ -16,6 +16,7 @@ This repository showcases the work I completed during my internship in May 2025.
 | 17/05/2025  | 📌 Started **Task 4**: Researched Image/Video Enhancement techniques     |
 | 18/05/2025  | ✅ Implemented cinematic filter for **Image Enhancement**                |
 | 19/05/2025  | ✅ Extended functionality to **Video & Webcam** with `Streamlit` UI      |
+| 20/05/2025  | ✅ Successfully enhanced **Video** with reduced pixel distortion         |
 
 ---
 
@@ -105,6 +106,7 @@ Designed and implemented a **Cinematic Enhancement Filter** for both images and 
 - Adjustable filter parameters for fine-tuning
 - Real-time webcam processing
 - Saves enhanced outputs and allows download
+- ✅ Enhanced video quality by reducing **pixel distortion artifacts**
 
 **Main Functions Used**:
 | Function Name            | Purpose                                                   |
@@ -140,9 +142,10 @@ This internship helped me explore advanced AI/ML concepts, including:
 - Building **NLP pipelines** from scratch
 - Classifying textual data with **SVM**
 - Applying **Cinematic Filters** to image and video data
+- Enhancing **video quality** by reducing pixel distortion
 - Using cutting-edge tools like **Stable Diffusion**, `OpenCV`, and `Streamlit`
 
-> ✅ Regular commits and progress updates were made between 12–19 May 2025.
+> ✅ Regular commits and progress updates were made between 12–20 May 2025.
 
 ---
 
