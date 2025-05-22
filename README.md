@@ -17,6 +17,7 @@ This repository showcases the work I completed during my internship in May 2025.
 | 18/05/2025  | ✅ Implemented cinematic filter for **Image Enhancement**                |
 | 19/05/2025  | ✅ Extended functionality to **Video & Webcam** with `Streamlit` UI      |
 | 20/05/2025  | ✅ Successfully enhanced **Video** with reduced pixel distortion         |
+| 22/05/2025  | ✅ Completed **Real-time Enhancement** using **Webcam Feed**             |
 
 ---
 
@@ -102,11 +103,11 @@ Designed and implemented a **Cinematic Enhancement Filter** for both images and 
 `OpenCV`, `Pillow`, `NumPy`, `Matplotlib`, `Google Colab`, `Streamlit`
 
 **Key Features**:
-- Applies cinematic-style enhancements to **images**, **videos**, and **webcam feed**
+- Applies cinematic-style enhancements to **images**, **videos**, and **real-time webcam feed**
 - Adjustable filter parameters for fine-tuning
-- Real-time webcam processing
-- Saves enhanced outputs and allows download
 - ✅ Enhanced video quality by reducing **pixel distortion artifacts**
+- ✅ Implemented **real-time webcam enhancement** pipeline with `Streamlit`
+- Saves enhanced outputs and allows download
 
 **Main Functions Used**:
 | Function Name            | Purpose                                                   |
@@ -117,7 +118,7 @@ Designed and implemented a **Cinematic Enhancement Filter** for both images and 
 | `add_film_grain()`       | Introduces subtle grain to simulate film look             |
 | `process_image_mode()`   | Applies filter to image and shows + downloads result      |
 | `process_video_mode()`   | Processes all frames of a video and saves output          |
-| `process_webcam_mode()`  | Streams real-time webcam with filter applied              |
+| `process_webcam_mode()`  | ✅ Streams **real-time webcam** with filter applied        |
 
 ---
 
@@ -143,9 +144,10 @@ This internship helped me explore advanced AI/ML concepts, including:
 - Classifying textual data with **SVM**
 - Applying **Cinematic Filters** to image and video data
 - Enhancing **video quality** by reducing pixel distortion
+- ✅ Achieved **real-time enhancement** of webcam feed using OpenCV + Streamlit
 - Using cutting-edge tools like **Stable Diffusion**, `OpenCV`, and `Streamlit`
 
-> ✅ Regular commits and progress updates were made between 12–20 May 2025.
+> ✅ Regular commits and progress updates were made between 12–22 May 2025.
 
 ---
 
