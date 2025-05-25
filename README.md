@@ -18,6 +18,8 @@ This repository showcases the work I completed during my internship in May 2025.
 | 19/05/2025  | ✅ Extended functionality to **Video & Webcam** with `Streamlit` UI      |
 | 20/05/2025  | ✅ Successfully enhanced **Video** with reduced pixel distortion         |
 | 22/05/2025  | ✅ Completed **Real-time Enhancement** using **Webcam Feed**             |
+| 23/05/2025  | ✅ Deployed Full **Cinematic Filter Studio** via **Streamlit Cloud**     |
+| 24/05/2025  | 📌 Researched and fixed **frame capture issues** in deployed webcam mode |
 
 ---
 
@@ -104,9 +106,11 @@ Designed and implemented a **Cinematic Enhancement Filter** for both images and 
 
 **Key Features**:
 - Applies cinematic-style enhancements to **images**, **videos**, and **real-time webcam feed**
+- ✅ All modes combined and deployed in a unified **Streamlit app** on **Streamlit Cloud**
 - Adjustable filter parameters for fine-tuning
 - ✅ Enhanced video quality by reducing **pixel distortion artifacts**
 - ✅ Implemented **real-time webcam enhancement** pipeline with `Streamlit`
+- ✅ Researched and fixed **frame buffer issues** on cloud for webcam support
 - Saves enhanced outputs and allows download
 
 **Main Functions Used**:
@@ -119,6 +123,7 @@ Designed and implemented a **Cinematic Enhancement Filter** for both images and 
 | `process_image_mode()`   | Applies filter to image and shows + downloads result      |
 | `process_video_mode()`   | Processes all frames of a video and saves output          |
 | `process_webcam_mode()`  | ✅ Streams **real-time webcam** with filter applied        |
+| `streamlit cloud deploy` | ✅ Deploys the full enhancement app to the cloud           |
 
 ---
 
@@ -128,7 +133,7 @@ Designed and implemented a **Cinematic Enhancement Filter** for both images and 
 |----------------------|--------------------------------------------------|
 | ML / DL Libraries    | `TensorFlow`, `Keras`, `PyTorch`                 |
 | Data Handling        | `NumPy`, `Pandas`                                |
-| Web App              | `Streamlit`                                      |
+| Web App              | `Streamlit`, `Streamlit Cloud`                   |
 | NLP & ML Models      | `Scikit-learn`, `Naive Bayes`, `SVM`             |
 | Image Generation     | `Stable Diffusion`, `Diffusers`, `Torch`         |
 | Enhancement Tools    | `OpenCV`, `Pillow`, `Matplotlib`                 |
@@ -145,9 +150,10 @@ This internship helped me explore advanced AI/ML concepts, including:
 - Applying **Cinematic Filters** to image and video data
 - Enhancing **video quality** by reducing pixel distortion
 - ✅ Achieved **real-time enhancement** of webcam feed using OpenCV + Streamlit
-- Using cutting-edge tools like **Stable Diffusion**, `OpenCV`, and `Streamlit`
+- ✅ Deployed full solution (image, video, webcam) to **Streamlit Cloud**
+- 📌 Solved **frame capture issues** in real-time filtering post-deployment
 
-> ✅ Regular commits and progress updates were made between 12–22 May 2025.
+> ✅ Regular commits and progress updates were made between 12–24 May 2025.
 
 ---
 
