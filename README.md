@@ -20,6 +20,9 @@ This repository showcases the work I completed during my internship in May 2025.
 | 22/05/2025  | ✅ Completed **Real-time Enhancement** using **Webcam Feed**             |
 | 23/05/2025  | ✅ Deployed Full **Cinematic Filter Studio** via **Streamlit Cloud**     |
 | 24/05/2025  | 📌 Researched and fixed **frame capture issues** in deployed webcam mode |
+| 25/05/2025  | ✅ Implemented **Hugging Face API** for predefined model-based enhancement |
+| 26/05/2025  | 📌 Researched **image quality improvement** techniques post-enhancement |
+| 27/05/2025  | ✅ Improved enhancement quality with **object-aware filtering**          |
 
 ---
 
@@ -35,17 +38,7 @@ Created a web app using `Streamlit` to generate images from natural language pro
 - Interactive UI with adjustable parameters (image size, steps, guidance scale, seed)
 - GPU/CPU optimized image generation
 - Downloadable output
-- Advanced settings with explanations
 - Prompt & negative prompt support
-
-**Main Functions Used**:
-| Function Name           | Purpose                                                        |
-|-------------------------|----------------------------------------------------------------|
-| `load_model()`          | Loads and configures the Stable Diffusion pipeline             |
-| `clear_memory()`        | Frees up GPU memory after image generation                     |
-| `st.text_area()`        | Accepts user prompt and negative prompt                        |
-| `pipe()`                | Generates the image from the prompt using diffusion model      |
-| `st.download_button()`  | Allows downloading the generated image                         |
 
 ---
 
@@ -63,13 +56,6 @@ Built a sentiment classifier to label input text as **positive** or **negative**
 - Trained `MultinomialNB` classifier
 - Predicted sentiment of user-provided prompt
 
-**Main Functions Used**:
-| Function Name      | Purpose                                           |
-|--------------------|---------------------------------------------------|
-| `CountVectorizer()`| Converts text to numeric feature vectors          |
-| `MultinomialNB()`  | Trains Naive Bayes classifier on labeled data     |
-| `model.predict()`  | Predicts the sentiment of new user input          |
-
 ---
 
 ## 📧 Task 3: Spam Classification using SVM 🚫
@@ -81,49 +67,49 @@ Developed a simple SVM-based email classifier to detect **Spam** vs **Not Spam**
 `Scikit-learn`, `re` (Regex)
 
 **Process**:
-- Preprocessed emails using regex (lowercase, remove non-alphanumeric)
-- Used `CountVectorizer` to vectorize the text
-- Trained `SVC` with linear kernel
-- Predicted category of user input email
-
-**Main Functions Used**:
-| Function Name           | Purpose                                                |
-|-------------------------|--------------------------------------------------------|
-| `preprocess()`          | Cleans text using regex                                |
-| `CountVectorizer()`     | Converts emails to numeric format                      |
-| `SVC(kernel='linear')`  | Trains a linear support vector machine                 |
-| `model.predict()`       | Predicts spam or not spam based on user input          |
+- Preprocessed emails using regex
+- Used `CountVectorizer`
+- Trained SVM with linear kernel
+- Predicted new emails as spam or not
 
 ---
 
-## 🎞️ Task 4: Image & Video Enhancement – Cinematic Filter ✨
+## 🎞️ Task 4: Cinematic Image/Video/Webcam Enhancement ✨
 
 **Description**:  
-Designed and implemented a **Cinematic Enhancement Filter** for both images and videos. The filter enhances media by adjusting contrast, brightness, color, adding tint, vignette effect, and film grain. Integrated with a simple CLI and `Streamlit` UI.
+Designed and implemented a **Cinematic Enhancement Filter** for images, videos, and real-time webcam feeds. Also experimented with Hugging Face models and quality-aware enhancement.
 
 **Libraries Used**:  
-`OpenCV`, `Pillow`, `NumPy`, `Matplotlib`, `Google Colab`, `Streamlit`
+`OpenCV`, `Pillow`, `NumPy`, `Matplotlib`, `Google Colab`, `Streamlit`, `requests`, `Hugging Face API`
 
-**Key Features**:
-- Applies cinematic-style enhancements to **images**, **videos**, and **real-time webcam feed**
-- ✅ All modes combined and deployed in a unified **Streamlit app** on **Streamlit Cloud**
-- Adjustable filter parameters for fine-tuning
-- ✅ Enhanced video quality by reducing **pixel distortion artifacts**
-- ✅ Implemented **real-time webcam enhancement** pipeline with `Streamlit`
-- ✅ Researched and fixed **frame buffer issues** on cloud for webcam support
-- Saves enhanced outputs and allows download
+---
 
-**Main Functions Used**:
-| Function Name            | Purpose                                                   |
-|--------------------------|-----------------------------------------------------------|
-| `CinematicFilter.apply()`| Main enhancement pipeline (contrast, tint, vignette, etc.)|
-| `adjust_tint()`          | Applies a red-blue cinematic tint                         |
-| `add_vignette()`         | Adds dark corners for depth effect                        |
-| `add_film_grain()`       | Introduces subtle grain to simulate film look             |
-| `process_image_mode()`   | Applies filter to image and shows + downloads result      |
-| `process_video_mode()`   | Processes all frames of a video and saves output          |
-| `process_webcam_mode()`  | ✅ Streams **real-time webcam** with filter applied        |
-| `streamlit cloud deploy` | ✅ Deploys the full enhancement app to the cloud           |
+### ✅ Key Features Implemented
+
+- Applies cinematic-style filter (contrast, tint, vignette, grain)
+- Supports **image**, **video**, and **real-time webcam enhancement**
+- UI built in `Streamlit` with **interactive sliders**
+- ✅ Cloud deployment via **Streamlit Cloud**
+- ✅ Used **Hugging Face pretrained model** via API for image enhancement (25/05/2025)
+- 📌 Researched post-enhancement **quality optimization** techniques (26/05/2025)
+- ✅ Enhanced model to improve object clarity and visual accuracy (27/05/2025)
+
+---
+
+### 📌 Enhancement Pipeline Functions
+
+| Function Name              | Purpose                                                      |
+|----------------------------|--------------------------------------------------------------|
+| `CinematicFilter.apply()`  | Applies full cinematic pipeline                              |
+| `adjust_tint()`            | Adds film-like red-blue tint                                 |
+| `add_vignette()`           | Adds dark borders for dramatic depth                         |
+| `add_film_grain()`         | Adds grain to simulate analog film                           |
+| `process_image_mode()`     | Applies cinematic filter to static image                     |
+| `process_video_mode()`     | Enhances all video frames                                    |
+| `process_webcam_mode()`    | Applies real-time cinematic filter via webcam                |
+| `streamlit cloud deploy`   | Deploys full app to **Streamlit Cloud**                      |
+| `huggingface_image_enhance()` | Uses Hugging Face API to apply pretrained enhancement model |
+| `object_aware_enhance()`   | Improves accuracy of key objects post-enhancement (27/05/2025)|
 
 ---
 
@@ -136,24 +122,25 @@ Designed and implemented a **Cinematic Enhancement Filter** for both images and 
 | Web App              | `Streamlit`, `Streamlit Cloud`                   |
 | NLP & ML Models      | `Scikit-learn`, `Naive Bayes`, `SVM`             |
 | Image Generation     | `Stable Diffusion`, `Diffusers`, `Torch`         |
-| Enhancement Tools    | `OpenCV`, `Pillow`, `Matplotlib`                 |
-| Miscellaneous        | `Regex`, `GC`, `Platform`, `Google Colab`        |
+| Enhancement Tools    | `OpenCV`, `Pillow`, `Matplotlib`, `Hugging Face API` |
+| Deployment & Utilities | `GC`, `Platform`, `Google Colab`, `requests`    |
 
 ---
 
 ## 🚀 Summary
 
 This internship helped me explore advanced AI/ML concepts, including:
-- Real-world **text-to-image synthesis**
-- Building **NLP pipelines** from scratch
-- Classifying textual data with **SVM**
-- Applying **Cinematic Filters** to image and video data
-- Enhancing **video quality** by reducing pixel distortion
-- ✅ Achieved **real-time enhancement** of webcam feed using OpenCV + Streamlit
-- ✅ Deployed full solution (image, video, webcam) to **Streamlit Cloud**
-- 📌 Solved **frame capture issues** in real-time filtering post-deployment
+- Real-world **text-to-image generation**
+- NLP-based **sentiment classification**
+- Email **spam filtering using SVM**
+- Cinematic-style **media enhancement**
+- Real-time **video & webcam filtering**
+- ✅ Integrated **Hugging Face models** for enhancement automation
+- ✅ Enhanced **image quality** and **object sharpness**
+- ✅ Deployed full solution to the cloud using **Streamlit**
+- ✅ Solved performance issues in real-time enhancement (frame capture fix)
 
-> ✅ Regular commits and progress updates were made between 12–24 May 2025.
+> ✅ Regular commits and progress updates were made between **12–27 May 2025**.
 
 ---
 
