@@ -24,6 +24,8 @@ This repository showcases the work I completed during my internship in May 2025.
 | 26/05/2025  | 📌 Researched **image quality improvement** techniques post-enhancement |
 | 27/05/2025  | ✅ Improved enhancement quality with **object-aware filtering**          |
 | 28/05/2025  | ✅ Added **YOLO-based subject masking** for focused cinematic enhancement |
+| 29/05/2025  | ✅ Successfully applied **YOLO masking** for object-focused image enhancement |
+| 30/05/2025  | 📌 Researched **YOLO + masking** for object-aware **video enhancement** |
 
 ---
 
@@ -78,7 +80,7 @@ Developed a simple SVM-based email classifier to detect **Spam** vs **Not Spam**
 ## 🎞️ Task 4: Cinematic Image/Video/Webcam Enhancement ✨
 
 **Description**:  
-Designed and implemented a **Cinematic Enhancement Filter** for images, videos, and real-time webcam feeds. Also experimented with Hugging Face models, quality optimization, and object-aware enhancement.
+Designed and implemented a **Cinematic Enhancement Filter** for images, videos, and real-time webcam feeds. Also experimented with Hugging Face models, quality optimization, and object-aware enhancement using YOLO.
 
 **Libraries Used**:  
 `OpenCV`, `Pillow`, `NumPy`, `Matplotlib`, `Google Colab`, `Streamlit`, `requests`, `Hugging Face API`, `rembg`, `onnxruntime`, `YOLO`
@@ -94,7 +96,8 @@ Designed and implemented a **Cinematic Enhancement Filter** for images, videos, 
 - ✅ Used **Hugging Face pretrained model** via API for image enhancement (25/05/2025)
 - 📌 Researched post-enhancement **quality optimization** techniques (26/05/2025)
 - ✅ Enhanced model to improve object clarity and visual accuracy (27/05/2025)
-- ✅ YOLO-based **subject-aware masking** with cinematic blending (28/05/2025)
+- ✅ YOLO-based **subject-aware masking** with cinematic blending for images (28–29/05/2025)
+- 📌 Research in progress for **YOLO + masking-based object-aware enhancement in video** (30/05/2025)
 
 ---
 
@@ -112,7 +115,8 @@ Designed and implemented a **Cinematic Enhancement Filter** for images, videos, 
 | `streamlit cloud deploy`   | Deploys full app to **Streamlit Cloud**                      |
 | `huggingface_image_enhance()` | Uses Hugging Face API to apply pretrained enhancement model |
 | `object_aware_enhance()`   | Improves accuracy of key objects post-enhancement (27/05/2025)|
-| `yolo_subject_mask()`      | Uses YOLO + `rembg` for subject masking and targeted enhancement (28/05/2025) |
+| `yolo_subject_mask()`      | Uses YOLO + `rembg` for subject masking (images) (28–29/05/2025) |
+| `yolo_video_mask_pipeline()` | 📌 (Research phase) YOLO + mask-based enhancement for video frames (30/05/2025) |
 
 ---
 
@@ -125,7 +129,7 @@ Designed and implemented a **Cinematic Enhancement Filter** for images, videos, 
 | Web App              | `Streamlit`, `Streamlit Cloud`                   |
 | NLP & ML Models      | `Scikit-learn`, `Naive Bayes`, `SVM`             |
 | Image Generation     | `Stable Diffusion`, `Diffusers`, `Torch`         |
-| Enhancement Tools    | `OpenCV`, `Pillow`, `Matplotlib`, `Hugging Face API`, `rembg`, `YOLO` |
+| Enhancement Tools    | `OpenCV`, `Pillow`, `Matplotlib`, `Hugging Face API`, `rembg`, `YOLO`, `onnxruntime` |
 | Deployment & Utilities | `GC`, `Platform`, `Google Colab`, `requests`    |
 
 ---
@@ -142,9 +146,10 @@ This internship helped me explore advanced AI/ML concepts, including:
 - ✅ Enhanced **image quality** and **object sharpness**
 - ✅ Deployed full solution to the cloud using **Streamlit**
 - ✅ Solved performance issues in real-time enhancement (frame capture fix)
-- ✅ Applied **YOLO-based subject masking** for refined and focused cinematic results
+- ✅ Applied **YOLO-based subject masking** for images
+- 📌 Currently exploring **YOLO-based object masking** for **video enhancement** (in progress)
 
-> ✅ Regular commits and progress updates were made between **12–28 May 2025**.
+> ✅ Regular commits and progress updates were made between **12–30 May 2025**.
 
 ---
 
