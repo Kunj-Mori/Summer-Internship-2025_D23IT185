@@ -1,39 +1,76 @@
-# 🧠 Internship Project – AI-Powered Applications (May 2025)
+# 🧠 Internship Project – AI-Powered Applications (May–June 2025)
 
-This repository showcases the work I completed during my internship in May 2025. It includes four major AI/ML-based tasks: **Text-to-Image Generation**, **Sentiment Analysis using NLP**, **Spam Detection using SVM**, and **Image/Video Enhancement with Cinematic Filter**.
-
----
-
-## 📅 Timeline
-
-| Date        | Activity                                                                 |
-|-------------|--------------------------------------------------------------------------|
-| 12/05/2025  | Studied `NumPy`, `Pandas`, `Keras`, `TensorFlow`, `PyTorch`              |
-| 13/05/2025  | Continued exploration of ML/DL libraries                                 |
-| 14/05/2025  | ✅ Completed **Task 1**: Text-to-Image Generator using Stable Diffusion  |
-| 15/05/2025  | ✅ Completed **Task 2**: Sentiment Analysis using NLP                    |
-| 16/05/2025  | ✅ Completed **Task 3**: Email Spam Classification using SVM             |
-| 17/05/2025  | 📌 Started **Task 4**: Researched Image/Video Enhancement techniques     |
-| 18/05/2025  | ✅ Implemented cinematic filter for **Image Enhancement**                |
-| 19/05/2025  | ✅ Extended functionality to **Video & Webcam** with `Streamlit` UI      |
-| 20/05/2025  | ✅ Successfully enhanced **Video** with reduced pixel distortion         |
-| 22/05/2025  | ✅ Completed **Real-time Enhancement** using **Webcam Feed**             |
-| 23/05/2025  | ✅ Deployed Full **Cinematic Filter Studio** via **Streamlit Cloud**     |
-| 24/05/2025  | 📌 Researched and fixed **frame capture issues** in deployed webcam mode |
-| 25/05/2025  | ✅ Implemented **Hugging Face API** for predefined model-based enhancement |
-| 26/05/2025  | 📌 Researched **image quality improvement** techniques post-enhancement |
-| 27/05/2025  | ✅ Improved enhancement quality with **object-aware filtering**          |
-| 28/05/2025  | ✅ Added **YOLO-based subject masking** for focused cinematic enhancement |
-| 29/05/2025  | ✅ Successfully applied **YOLO masking** for object-focused image enhancement |
-| 30/05/2025  | 📌 Researched **YOLO + masking** for object-aware **video enhancement** |
-| 31/05/2025  | Started working on **video masking module**; achieved basic 20% filtering |
-| 01–02/06/2025 | ✅ Researched and started video enhancement from scratch using `MoviePy` |
-| 03–04/06/2025 | ✅ Developed working pipeline for **video+audio** processing and FPS/frame merging |
-| 05/06/2025  | ✅ Implemented video file upload and basic processing UI |
-| 06–07/06/2025 | ✅ Developed core cinematic enhancement using `MoviePy` and `OpenCV` |
-| 08–09/06/2025 | ✅ Integrated full pipeline with letterbox + cinematic coloring + output video/audio |
+This repository showcases the work I completed during my internship. It includes four major AI/ML-based tasks: **Text-to-Image Generation**, **Sentiment Analysis using NLP**, **Spam Detection using SVM**, and **Image/Video Enhancement with Cinematic Filter**.
 
 ---
+
+## 📅 Timeline (Weekly Tree View)
+
+<details>
+<summary><strong>📦 Week 1 (12 May – 18 May)</strong></summary>
+
+| Date       | Day        | Activity                                                                 |
+|------------|------------|--------------------------------------------------------------------------|
+| 12/05/2025 | Monday     | Studied `NumPy`, `Pandas`, `Keras`, `TensorFlow`, `PyTorch`              |
+| 13/05/2025 | Tuesday    | Continued exploration of ML/DL libraries                                 |
+| 14/05/2025 | Wednesday  | ✅ Completed **Task 1**: Text-to-Image Generator using Stable Diffusion  |
+| 15/05/2025 | Thursday   | ✅ Completed **Task 2**: Sentiment Analysis using NLP                    |
+| 16/05/2025 | Friday     | ✅ Completed **Task 3**: Email Spam Classification using SVM             |
+| 17/05/2025 | Saturday   | 📌 Started **Task 4**: Researched Image/Video Enhancement techniques     |
+| 18/05/2025 | Sunday     | ✅ Implemented cinematic filter for **Image Enhancement**                |
+
+</details>
+
+<details>
+<summary><strong>📦 Week 2 (19 May – 25 May)</strong></summary>
+
+| Date       | Day        | Activity                                                                 |
+|------------|------------|--------------------------------------------------------------------------|
+| 19/05/2025 | Monday     | ✅ Extended functionality to **Video & Webcam** with `Streamlit` UI      |
+| 20/05/2025 | Tuesday    | ✅ Successfully enhanced **Video** with reduced pixel distortion         |
+| 22/05/2025 | Thursday   | ✅ Completed **Real-time Enhancement** using **Webcam Feed**             |
+| 23/05/2025 | Friday     | ✅ Deployed Full **Cinematic Filter Studio** via **Streamlit Cloud**     |
+| 24/05/2025 | Saturday   | 📌 Researched and fixed **frame capture issues** in deployed webcam mode |
+| 25/05/2025 | Sunday     | ✅ Implemented **Hugging Face API** for predefined model-based enhancement |
+
+</details>
+
+<details>
+<summary><strong>📦 Week 3 (26 May – 01 June)</strong></summary>
+
+| Date       | Day        | Activity                                                                 |
+|------------|------------|--------------------------------------------------------------------------|
+| 26/05/2025 | Monday     | 📌 Researched **image quality improvement** techniques post-enhancement |
+| 27/05/2025 | Tuesday    | ✅ Improved enhancement quality with **object-aware filtering**          |
+| 28/05/2025 | Wednesday  | ✅ Added **YOLO-based subject masking** for focused cinematic enhancement |
+| 29/05/2025 | Thursday   | ✅ Applied **YOLO masking** successfully on images                       |
+| 30/05/2025 | Friday     | 📌 Researched **YOLO + masking** for **video enhancement**              |
+| 31/05/2025 | Saturday   | Started working on **video masking module**; achieved 20% filtering     |
+
+</details>
+
+<details>
+<summary><strong>📦 Week 4 (02 June – 08 June)</strong></summary>
+
+| Date       | Day        | Activity                                                                 |
+|------------|------------|--------------------------------------------------------------------------|
+| 01–02/06   | Sun–Mon    | ✅ Researched and restarted video enhancement using `MoviePy` from scratch |
+| 03–04/06   | Tue–Wed    | ✅ Developed working pipeline for **video+audio** processing, FPS/frame merging |
+| 05/06/2025 | Thursday   | ✅ Started coding file upload + processing logic                         |
+| 06–07/06   | Fri–Sat    | ✅ Developed **cinematic effect functions** using MoviePy + OpenCV        |
+| 08/06/2025 | Sunday     | ✅ Finalized `apply_cinematic_effect()` with border, color grading, and output |
+
+</details>
+
+<details>
+<summary><strong>📦 Week 5 (09 June – 15 June)</strong></summary>
+
+| Date       | Day        | Activity                                                                 |
+|------------|------------|--------------------------------------------------------------------------|
+| 10/06/2025 | Monday     | ✅ Fine-tuned enhancement filters for **video object detection** using YOLO |
+| 11/06/2025 | Tuesday    | ✅ Tested model on **human-focused videos**, improved clarity and output quality |
+
+</details>
 
 ## 🔧 Task 1: Text-to-Image Generation 🎨
 
