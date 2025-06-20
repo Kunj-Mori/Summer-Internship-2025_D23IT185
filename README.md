@@ -1,9 +1,3 @@
-# 🧠 Internship Project – AI-Powered Applications (May–June 2025)
-
-This repository showcases the work I completed during my internship. It includes four major AI/ML-based tasks: **Text-to-Image Generation**, **Sentiment Analysis using NLP**, **Spam Detection using SVM**, and **Image/Video Enhancement with Cinematic Filter**.
-
----
-
 ## 📅 Timeline (Weekly Tree View)
 
 <details>
@@ -67,8 +61,27 @@ This repository showcases the work I completed during my internship. It includes
 
 | Date       | Day        | Activity                                                                 |
 |------------|------------|--------------------------------------------------------------------------|
-| 10/06/2025 | Monday     | ✅ Fine-tuned enhancement filters for **video object detection** using YOLO |
-| 11/06/2025 | Tuesday    | ✅ Tested model on **human-focused videos**, improved clarity and output quality |
+| 10/06/2025 | Monday     | ✅ Fine-tuned **YOLO-based video enhancement** pipeline                  |
+| 11/06/2025 | Tuesday    | ✅ Tested on **human-focused videos**, improved clarity and accuracy     |
+| 12/06/2025 | Wednesday  | ✅ Fixed **video enhancement stability and transitions**                 |
+| 13/06/2025 | Thursday   | ✅ Final improvements in object-aware filtering for **video**            |
+| 14/06/2025 | Friday     | ✅ Fine-tuned model post-processing for enhanced results                 |
+| 15/06/2025 | Saturday   | ✅ Finalized detection model + filter combination                        |
+
+</details>
+
+<details>
+<summary><strong>📦 Week 6 (16 June – 22 June)</strong></summary>
+
+| Date       | Day        | Activity                                                                 |
+|------------|------------|--------------------------------------------------------------------------|
+| 16/06/2025 | Sunday     | 🔍 Started researching **webcam-based real-time cinematic enhancement** |
+| 17/06/2025 | Monday     | 🔍 Continued segmentation and real-time video background studies         |
+| 18/06/2025 | Tuesday    | ✅ Started development of **MediaPipe-based segmentation** model         |
+| 19/06/2025 | Wednesday  | ✅ Local implementation with **virtualenv + OpenCV**                     |
+| 20/06/2025 | Thursday   | ✅ Real-time filter with **MediaPipe + vignette + blur + color grading** |
+| 21/06/2025 | Friday     | 🔄 Testing integration with webcam feed (real-time pipeline)             |
+| 22/06/2025 | Saturday   | ✅ Full setup tested across different lighting conditions                |
 
 </details>
 
@@ -77,8 +90,11 @@ This repository showcases the work I completed during my internship. It includes
 **Description**:  
 Created a web app using `Streamlit` to generate images from natural language prompts using **Stable Diffusion v2.1**.
 
-**Model Used**: `stabilityai/stable-diffusion-2-1`  
-**Libraries**: `Streamlit`, `Torch`, `Diffusers`, `PIL`, `GC`, `Platform`
+**Model Used**:  
+`stabilityai/stable-diffusion-2-1`
+
+**Libraries**:  
+`Streamlit`, `Torch`, `Diffusers`, `PIL`, `GC`, `Platform`
 
 **Features**:
 - Interactive UI with adjustable parameters (image size, steps, guidance scale, seed)
@@ -123,10 +139,14 @@ Developed a simple SVM-based email classifier to detect **Spam** vs **Not Spam**
 ## 🎞️ Task 4: Cinematic Image/Video/Webcam Enhancement ✨
 
 **Description**:  
-Designed and implemented a **Cinematic Enhancement Filter** for images, videos, and real-time webcam feeds. Later extended to include **YOLO-based subject masking** and **MoviePy-based video enhancement** with audio syncing and cinematic filters.
+Designed and implemented a **Cinematic Enhancement Filter** for images, videos, and real-time webcam feeds. Extended later to include:
+- **YOLO-based subject masking**
+- **MoviePy-based video enhancement**
+- **Real-time MediaPipe-based webcam enhancement**
 
 **Libraries Used**:  
-`OpenCV`, `Pillow`, `NumPy`, `Matplotlib`, `Google Colab`, `Streamlit`, `requests`, `Hugging Face API`, `rembg`, `onnxruntime`, `YOLO`, `MoviePy`
+`OpenCV`, `Pillow`, `NumPy`, `Matplotlib`, `Google Colab`, `Streamlit`, `requests`,  
+`Hugging Face API`, `rembg`, `onnxruntime`, `YOLO`, `MoviePy`, `MediaPipe`
 
 ---
 
@@ -136,31 +156,31 @@ Designed and implemented a **Cinematic Enhancement Filter** for images, videos, 
 - Supports **image**, **video**, and **real-time webcam enhancement**
 - UI built in `Streamlit` with **interactive sliders**
 - ✅ Cloud deployment via **Streamlit Cloud**
-- ✅ Used **Hugging Face pretrained model** via API for image enhancement (25/05/2025)
+- ✅ Used Hugging Face pretrained model via API for image enhancement (25/05/2025)
 - ✅ YOLO-based **subject-aware masking** for cinematic blending (28–30/05/2025)
-- ✅ Started `MoviePy`-based **video masking and enhancement** (31/05/2025 onward)
-- ✅ Full video+audio processing implemented using `MoviePy` (03–09/06/2025)
-- ✅ Brightness/contrast enhancement, red-blue tone boost, cinematic frame borders
+- ✅ MoviePy-based **video masking + enhancement** (31/05–09/06/2025)
+- ✅ MediaPipe-based **webcam cinematic enhancement** (16/06–20/06/2025)
 
 ---
 
 ### 📌 Enhancement Pipeline Functions
 
-| Function Name              | Purpose                                                                 |
-|----------------------------|-------------------------------------------------------------------------|
-| `CinematicFilter.apply()`  | Applies full cinematic pipeline                                         |
-| `adjust_tint()`            | Adds film-like red-blue tint                                            |
-| `add_vignette()`           | Adds dark borders for dramatic depth                                    |
-| `add_film_grain()`         | Adds grain to simulate analog film                                      |
-| `process_image_mode()`     | Applies cinematic filter to static image                                |
-| `process_video_mode()`     | Enhances all video frames                                               |
-| `process_webcam_mode()`    | Applies real-time cinematic filter via webcam                           |
-| `streamlit cloud deploy`   | Deploys full app to **Streamlit Cloud**                                 |
-| `huggingface_image_enhance()` | Uses Hugging Face API to apply pretrained enhancement model          |
-| `object_aware_enhance()`   | Improves object clarity post-enhancement (27/05/2025)                   |
-| `yolo_subject_mask()`      | Applies YOLO + rembg-based subject masking for image (28–29/05/2025)    |
-| `yolo_video_mask_pipeline()` | 📌 In progress: YOLO + mask-based video enhancement (30/05/2025)       |
-| `apply_cinematic_effect()` | ✅ MoviePy-based full pipeline: border, tint, FPS, audio sync (08/06/2025)|
+| Function Name                 | Purpose                                                                 |
+|------------------------------|-------------------------------------------------------------------------|
+| `CinematicFilter.apply()`     | Applies full cinematic pipeline                                         |
+| `adjust_tint()`               | Adds film-like red-blue tint                                            |
+| `add_vignette()`              | Adds dark borders for dramatic depth                                    |
+| `add_film_grain()`            | Adds grain to simulate analog film                                      |
+| `process_image_mode()`        | Applies cinematic filter to static image                                |
+| `process_video_mode()`        | Enhances all video frames                                               |
+| `process_webcam_mode()`       | Applies real-time cinematic filter via webcam                           |
+| `streamlit cloud deploy`      | Deploys full app to Streamlit Cloud                                     |
+| `huggingface_image_enhance()` | Uses Hugging Face API to apply pretrained enhancement model             |
+| `object_aware_enhance()`      | Improves object clarity post-enhancement (27/05/2025)                   |
+| `yolo_subject_mask()`         | YOLO + rembg-based subject masking (28–29/05/2025)                      |
+| `yolo_video_mask_pipeline()`  | In-progress: YOLO + mask-based video enhancement (30/05/2025)           |
+| `apply_cinematic_effect()`    | Full MoviePy video filter (FPS, audio sync, red-blue tint) (08/06/2025)|
+| `mediapipe_webcam_enhance()`  | MediaPipe-based real-time enhancement + background blur (20/06/2025)    |
 
 ---
 
@@ -173,7 +193,7 @@ Designed and implemented a **Cinematic Enhancement Filter** for images, videos, 
 | Web App              | `Streamlit`, `Streamlit Cloud`                   |
 | NLP & ML Models      | `Scikit-learn`, `Naive Bayes`, `SVM`             |
 | Image Generation     | `Stable Diffusion`, `Diffusers`, `Torch`         |
-| Enhancement Tools    | `OpenCV`, `Pillow`, `Matplotlib`, `Hugging Face API`, `rembg`, `YOLO`, `MoviePy`, `onnxruntime` |
+| Enhancement Tools    | `OpenCV`, `Pillow`, `Matplotlib`, `Hugging Face API`, `rembg`, `YOLO`, `MoviePy`, `onnxruntime`, `MediaPipe` |
 | Deployment & Utilities | `GC`, `Platform`, `Google Colab`, `requests`    |
 
 ---
@@ -186,12 +206,13 @@ This internship helped me explore and implement:
 - Email **spam filtering using SVM**
 - Cinematic-style **media enhancement**
 - Real-time **video & webcam filtering**
-- ✅ Integrated **Hugging Face** models for enhancement
-- ✅ YOLO-based **subject masking**
-- ✅ Built full **MoviePy-based video enhancer** from scratch
+- ✅ Integrated Hugging Face models for enhancement
+- ✅ YOLO-based subject masking
+- ✅ Full MoviePy-based video enhancer from scratch
 - ✅ Audio+video sync, FPS handling, red-blue grading, frame enhancement
+- ✅ MediaPipe-based **real-time webcam enhancement with blur, vignette, and tint**
 
-> ✅ Regular commits and progress updates were made between **12 May – 9 June 2025**.
+> ✅ Regular commits and progress updates were made between **12 May – 20 June 2025**
 
 ---
 
