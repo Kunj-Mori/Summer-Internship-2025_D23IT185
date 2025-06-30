@@ -85,6 +85,22 @@
 
 </details>
 
+<details>
+<summary><strong>📦 Week 7 (23 June – 29 June)</strong></summary>
+
+| Date       | Day        | Activity                                                                                   |
+|------------|------------|--------------------------------------------------------------------------------------------|
+| 23/06/2025 | Sunday     | ✅ Started enhancing webcam filter with **MediaPipe segmentation**                         |
+| 24/06/2025 | Monday     | ✅ Added **vignette effect** and optimized **segmentation smoothing**                      |
+| 25/06/2025 | Tuesday    | ✅ Integrated **bilateral filter** and **subject sharpening** for facial clarity           |
+| 26/06/2025 | Wednesday  | ✅ Applied **teal-orange LUT** grading for cinematic color tones                           |
+| 27/06/2025 | Thursday   | ✅ Added **film grain simulation** for analog-style texture                                |
+| 28/06/2025 | Friday     | ✅ Implemented **cinematic letterbox (2.35:1 aspect ratio)** using padding                 |
+| 29/06/2025 | Saturday   | ✅ Finalized **real-time webcam cinematic enhancer** with all effects working in sync      |
+
+</details>
+
+
 ## 🔧 Task 1: Text-to-Image Generation 🎨
 
 **Description**:  
@@ -139,14 +155,17 @@ Developed a simple SVM-based email classifier to detect **Spam** vs **Not Spam**
 ## 🎞️ Task 4: Cinematic Image/Video/Webcam Enhancement ✨
 
 **Description**:  
-Designed and implemented a **Cinematic Enhancement Filter** for images, videos, and real-time webcam feeds. Extended later to include:
-- **YOLO-based subject masking**
-- **MoviePy-based video enhancement**
-- **Real-time MediaPipe-based webcam enhancement**
+Designed and implemented a **Cinematic Enhancement Filter** for images, videos, and real-time webcam feeds. The project was progressively expanded to include:
+
+- **YOLO-based subject masking** for precise object-focused filtering
+- **MoviePy-based video enhancement pipeline** with audio syncing, FPS handling, and red-blue grading
+- **Real-time MediaPipe-based webcam enhancement**, including segmentation, background blur, color grading, vignette, film grain, and cinematic letterbox framing
 
 **Libraries Used**:  
 `OpenCV`, `Pillow`, `NumPy`, `Matplotlib`, `Google Colab`, `Streamlit`, `requests`,  
 `Hugging Face API`, `rembg`, `onnxruntime`, `YOLO`, `MoviePy`, `MediaPipe`
+
+
 
 ---
 
